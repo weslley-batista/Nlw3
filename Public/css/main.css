@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    color: white;
+   
+}
+body, input, button,textarea{
+   font-size: 18px;
+   line-height:1;
+   font-family: 'nunito', monospace; 
+}
+/*configuração pafina principal*/
+#pag_lading{
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) no-repeat; 
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#container{
+    margin: auto;
+    width: 90%;
+}
+.location, h1, .visit p{
+ height: 16vh;
+}
+.visit a{
+    width:4rem;
+    height: 4rem;
+    background: #ffd666;
+
+    border: none;
+    border-radius:3rem;
+
+    display:flex;
+    align-items: center;
+    justify-content:center;
+
+    margin: auto;
+
+    transition: background 200ms;
+}
+.visit a:hover{
+    background: #96feff;
+}
+/*fim animação pagina princiapal*/
+/*animaçoes*/
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+.animate-up{
+    animation-name: up;
+    animation-duration: 0.3s;
+    animation-fill-mode: backwards;
+
+}
+
+.location{
+    animation-delay: 100ms;
+}
+.visit h1{
+    animation-delay: 150ms;
+}
+.visit p{
+    animation-delay: 200ms
+}
+.visit a{
+    animation-delay:250ms
+}
+/*fim das animaçoes*/
